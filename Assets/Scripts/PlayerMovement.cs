@@ -32,13 +32,13 @@ public class PlayerMovement : MonoBehaviour
         ClimbLadder();
     }
 
-    void OnMove(InputValue value)
+    private void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
         Debug.Log(moveInput);
     }
 
-    void OnJump(InputValue value)
+    private void OnJump(InputValue value)
     {
         if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
