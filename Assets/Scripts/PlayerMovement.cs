@@ -59,14 +59,6 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void Jump()
-    {
-        if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
-
-            
-            myRigidbody.velocity += new Vector2(0f, jumpSpeed);
-    }
-
     void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
