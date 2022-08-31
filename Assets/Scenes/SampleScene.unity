@@ -7002,6 +7002,8 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: -725336713
     m_ParentHash: 756556552
+  - m_Hash: -1546996312
+    m_ParentHash: 756556552
 --- !u!1 &1685669275
 GameObject:
   m_ObjectHideFlags: 0
@@ -15435,6 +15437,10 @@ PrefabInstance:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 7557316195119028797, guid: 77cf1b98bf7e557479f65ded4e407b86, type: 3}
+    - target: {fileID: 3253449913115530309, guid: f7dc625854355fc45873999284f169f2, type: 3}
+      propertyPath: runSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6565992517008657973, guid: f7dc625854355fc45873999284f169f2, type: 3}
       propertyPath: m_RootOrder
       value: 1

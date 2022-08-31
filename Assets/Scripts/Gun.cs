@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
-    [SerializeField] Transform gun;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform gun;
 
     public void Fire()
     {
