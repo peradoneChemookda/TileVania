@@ -62,6 +62,19 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
     }
+
+    // void JumpAnimationCheck()
+    // {
+    //     if(!isAlive) { return ;}
+    //     if(myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies" , "Hazards")))
+    //     {
+    //         myAnimator.SetBool("isJumping",false);
+    //     }
+    //     else if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+    //     {
+    //         myAnimator.SetBool("isJumping",true);
+    //     }
+    // }
     
     void Run()
     {
@@ -108,6 +121,14 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
+
+            StartCoroutine(DieDelay());
         }
+    }
+
+    IEnumerator DieDelay()
+    {
+        yield return new WaitForSecondsRealtime(3);
+        FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }
 }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3253449913115530309}
   m_Layer: 8
   m_Name: Ginger (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -762352853
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 731349217, guid: de1f7b13ba46bf2419f4c9101464f7b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -261,6 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8070312426997983301}
+  - component: {fileID: 988621145}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
@@ -283,3 +284,17 @@ Transform:
   m_Father: {fileID: 6565992517008657973}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988621145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133752653652590111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcc9ccf4b837534981f97c2356403e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 7557316195119028797, guid: 77cf1b98bf7e557479f65ded4e407b86, type: 3}
+  gun: {fileID: 8070312426997983301}
